@@ -1,0 +1,346 @@
+body {
+    overflow-x: hidden;
+}
+#header-title {
+    margin-top: 15%;
+}
+#header-title__1 {
+background: -webkit-linear-gradient(-120deg, #ecba5c 40%, #8bee80);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+    font-size: 500%;
+}
+.header-2 {
+    height: 700px;
+    color: white;
+    background-image: repeating-radial-gradient(rgba(255, 166, 0, 0.137), rgba(255, 0, 0, 0.13)), url(https://cdn.wallpapersafari.com/22/37/SzBoh1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+#header-title__3 {
+    background: -webkit-linear-gradient(-120deg, #ecba5c 40%, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+        font-size: 500%;
+    }
+    #header-title__4 {
+        color: white;
+        margin-top: 5%;
+        padding-bottom: 2%;
+        font-size: 300%;
+        border-bottom: 4px solid orange;
+    }
+#header-title__2 {
+    color: white;
+    margin-top: 5%;
+    padding-bottom: 2%;
+    font-size: 300%;
+}
+.header {
+    height: 600px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.336)) , url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/edc-web-house-tour-fuller07-1586874956.jpg?crop=1.00xw:0.721xh;0,0.182xh&resize=1200:*);
+    background-size: cover;
+    width: 100%;
+}
+.line {
+    height: 5px;
+    background-color: greenyellow;
+    width: 100%;
+}
+#header-title__3 {
+    margin-top: 2%;
+    padding-bottom: 1%;
+    font-size: 400%;
+}
+.about {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.589), rgba(128, 0, 128, 0.281)) , url(https://cdn.shopify.com/s/files/1/0285/1316/products/w0124_1s_Fractal-Stone-Pattern-Wallpaper-for-Walls-White-Stone_For-Interior-Walls-3.jpg?v=1587663188);
+ color: #fff;
+ page-break-after: 100px;
+
+   
+}
+#btn-about-1 {
+    color: white;
+    font-size: 100%;
+    border-radius: 20px;
+    background-color: black;
+    border: 4px solid white;
+}
+#btn-about-1:hover {
+    color: black;
+    font-size: 100%;
+    border-radius: 20px;
+    background-color: white;
+    border: 4px solid black;
+}
+#carousel-wrapper {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#carousel-wrapper #menu {
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    font-weight: 700;
+    line-height: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    transition: all 0.6s ease-in-out;
+}
+#carousel-wrapper #menu #current-option {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translate(-25%, 0%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#carousel-wrapper #menu #current-option #current-option-text1 {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    margin-left: -250px;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+#carousel-wrapper #menu #current-option #current-option-text1:before {
+    content: attr(data-next-text);
+    position: absolute;
+    transform: translate(0%, 380px);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+#carousel-wrapper #menu #current-option #current-option-text1:after {
+    content: attr(data-previous-text);
+    position: absolute;
+    transform: translate(0%, -380px);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+#carousel-wrapper #menu #previous-option {
+width: 1.5rem;
+height: 1.5rem;
+margin-left: 20%;
+border: none;
+display: block;
+cursor: pointer;
+background: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 256 256'%3E%3Cpolygon points='225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093' fill='%23333'%3E%3C/polygon%3E%3C/svg%3E");
+
+background-size: cover;
+position: absolute;
+transform: translate(310px, 50px);
+}
+#carousel-wrapper #menu #next-option {
+  
+    width: 1.5rem;
+height: 1.5rem;
+margin-left: 20%;
+border: none;
+display: block;
+cursor: pointer;
+background: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 256 256'%3E%3Cpolygon points='225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093' fill='%23333'%3E%3C/polygon%3E%3C/svg%3E");
+
+background-size: cover;
+position: absolute;
+transform: translate(310px, -50px) rotate(-180deg);
+}
+#carousel-wrapper #image {
+    height: 400px;
+    width: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 11;
+    position: absolute;
+    transform: translate(140px, 0px);
+}
+#carousel-wrapper.anim-text {
+    pointer-events: none;
+}
+#carousel-wrapper.anim-text #current-option-text1 {
+    animation: next-text 0.65s 0.085s;
+    padding-left: -100px;
+}
+#carousel-wrapper.anim-text #previous-option {
+    animation: next-top-arrow 0.65s 0.085s;
+}
+#carousel-wrapper.anim-text #next-option {
+    animation: next-bottom-arrow 0.65s 0.085s;
+}
+#carousel-wrapper.anim-next #image {
+    animation: next-image 0.65s 0.085s;
+}
+#carousel-wrapper.anim-previous {
+    pointer-events: none;
+}
+#carousel-wrapper.anim-previous #current-option-text1  {
+    animation: previous-text 0.6s 0.085s;
+}
+#carousel-wrapper.anim-previous #previous-option  {
+    animation: previous-top-arrow 0.6s 0.085s;
+}
+#carousel-wrapper.anim-previous #next-option  {
+    animation: previous-bottom-arrow 0.6s 0.085s;
+}
+#carousel-wrapper.anim-previous #image {
+    animation: previous-image 0.65s 0.085s;
+}
+@keyframes previous-text {
+    50%,
+    55% {
+        transform: translate(0%, 390px);
+    }
+    to {
+        transform: translate(0%, 380px);
+    }
+}
+@keyframes previous-top-arrow {
+    50% {
+        transform: translate(310px, 53px);
+    }
+}
+@keyframes previous-bottom-arrow {
+    50% {
+        transform: translate(310px, -47px) rotate(-180deg);
+    }
+}
+@keyframes previous-image {
+    0% {
+        transform: translate(140px, 0) scale(1);
+        opacity: 1;
+    }
+    70% {
+        transform: translate(180px, 0) scale(1.1);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(140px, 0) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes next-text {
+    50%,
+    55% {
+        transform: translate(0%, -390px);
+    }
+    to {
+        transform: translate(0%, -380px);
+    }
+}
+@keyframes next-top-arrow {
+    50% {
+        transform: translate(310px, 47px);
+    }
+}
+@keyframes next-bottom-arrow {
+    50% {
+        transform: translate(310px, -53px) ;
+    }
+}
+@keyframes next-image {
+    0% {
+        transform: translate(140px, 0) scale(1);
+        opacity: 1;
+    }
+    70% {
+        transform: translate(100px, 0) scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(140px, 0) scale(1);
+        opacity: 1;
+    }
+}
+.counter-items {
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: crimson;
+    font-size: 50px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+#fa1 {
+    padding: 30px;
+    background-color: darkcyan;
+}
+#fa2 {
+    padding: 30px;
+    background-color: rgb(209, 209, 187);
+}
+#fa3 {
+    padding: 30px;
+    background-color: orangered;
+}
+#row-counter {
+    border: 4px solid greenyellow;
+}
+.line2 {
+    width: 100%;
+    background-color: orange;
+    height: 5px;
+}
+.counter-items-2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: brown;
+    font-size: 50px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+#fa4 {
+    padding: 30px;
+    background-color: rgb(8, 104, 8);
+}
+#fa5 {
+    padding: 30px;
+    background-color: burlywood;
+}
+#fa6 {
+    padding: 30px;
+    background-color: goldenrod;
+}
+#row-counter-2 {
+    border: 4px solid orange;
+}
+#about-2 {
+    height: 850px;
+}
+
+
+
+
+/* 
+
+
+    background-image: url(https://www.wallmirrors.eu/wp-content/uploads/2016/03/10-Outstanding-Modern-Mirrors-to-Inspire-Your-Next-Decor-Project.jpg);
+
+        background-image: url(https://pbs.twimg.com/media/ERs3OJfWsAAye8g.jpg);
+
+            background-image: url(https://www.singhaestate.co.th/cms/uploads/media_library/2019/09/s_3264307.jpg);
+*/
